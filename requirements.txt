@@ -1,0 +1,4 @@
+python-dateutil~=2.8.1
+boto3~=1.15.16
+botocore~=1.18.16
+prompt-toolkit~=3.0.7
