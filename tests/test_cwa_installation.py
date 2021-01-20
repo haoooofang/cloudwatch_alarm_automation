@@ -1,3 +1,6 @@
+"""CWA安装测试
+
+"""
 from time import sleep
 
 import boto3

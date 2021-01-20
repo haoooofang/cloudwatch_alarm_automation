@@ -1,3 +1,6 @@
+"""CWA 安装
+
+"""
 import logging
 from datetime import datetime, timedelta
 from time import sleep

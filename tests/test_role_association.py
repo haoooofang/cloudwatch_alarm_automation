@@ -1,3 +1,6 @@
+"""IAM Role 关联测试
+
+"""
 from time import sleep
 
 import boto3
