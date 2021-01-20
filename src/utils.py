@@ -1,15 +1,19 @@
+"""" 工具类
+
+"""
+
+import logging
+
 import boto3
 from botocore.exceptions import ClientError
+
 from src.config import config
-import logging
 
 logging.basicConfig(level=config.LOGLEVEL)
 logger = logging.getLogger(__name__)
 
 session = boto3.Session(region_name=config.REGION_NAME)
 
-
-# 工具类
 
 # 输入:
 #   Name

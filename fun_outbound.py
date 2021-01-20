@@ -24,8 +24,9 @@ if not global_region_name or not instance_id or not parameter_name or not contac
     raise Exception("Failed to get environment parameters.")
 
 cn_session = boto3.Session(region_name=cn_region_name)
-ssm_client = cn_session.client('ssm')
 
+# 获得 AccessKey_Id/AccessKey_Secret
+ssm_client = cn_session.client('ssm')
 response = ssm_client.get_parameter(
     Name=parameter_name,
     WithDecryption=True

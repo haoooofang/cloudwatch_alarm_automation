@@ -38,6 +38,7 @@ if __name__ == '__main__':
             # 安装并配置 CloudWatch Agent
             cwa_installer.cwa_install()
         elif result == "cw_alarm_put":
+            # 需要先在 config.py 文件中完成 Connect 的设置
             # 先创建 SNS Topic
             topic = topic_create(config.SNS_TOPIC_NAME)
             cw_setter = CloudWatchAlarmSetter(topic)

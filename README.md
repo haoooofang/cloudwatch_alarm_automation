@@ -40,4 +40,4 @@
 4. test 会新建和删除资源, 请仅运行在隔离的测试环境.
 
 todo:
-1. KDA Anomaly Detection.
+1. KDA Anomaly Detection
